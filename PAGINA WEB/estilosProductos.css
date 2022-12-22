@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3em;}
+h2{font-size: 2.7em;}
+h4{
+    font-size: 20px;
+    text-align: left;
+    margin: 30px 100px;
+    padding: 30px 10px;
+    color: rgb(80, 205, 255);
+}
+p{font-size: 1.25em;}
+
+button{
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid rgb(255, 0, 0);
+    box-shadow: 2px 2px 10px rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 7, 7);
+    cursor: pointer;
+}
+
+.contenedor{
+    max-width: 1500px;
+    margin: auto;
+}
+
+button:hover{
+    background-color: rgb(216, 6, 6);
+}
+
+.contenedor{
+    max-width: 1500px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(242, 242, 247);
+   
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px ;
+    font-weight: bold;
+    color: rgb(132, 7, 182);
+    font-size: 1.50em;
+}
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    background-color: rgb(219, 219, 218);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#titulo .carousel-inner{
+    display: block;
+    align-items: center;
+    padding: 5px 12px;
+    height: 500px;
+    width: 1000px;
+}
+
+@media (min-width: 800px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+        header .contenedor{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        header nav{
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+    }
+
+
+
